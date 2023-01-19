@@ -1,5 +1,5 @@
 public class Account extends AccountHolder {
-    private double balance = 0;
+    protected double balance = 0;
 
     public Account(String _name, String _cpf) {
         super(_name, _cpf);
@@ -11,11 +11,22 @@ public class Account extends AccountHolder {
     }
 
     public double toWithdraw ( double toWithdraw) {
+        if(balance <= 0){
+            System.out.println("I do not have money");
+            return toWithdraw;
+        }
+        if(toWithdraw > balance) {
+            System.out.println("Insufficient funds");
+        }
 
+        balance -= toWithdraw;
+        System.out.println("Withdrawn amount "+toWithdraw);
+        System.out.println("Account balance "+balance);
         return toWithdraw;
     }
 
     public void transfer( double value, AccountHolder to ) {
         
     }   
+
 }

@@ -4,5 +4,11 @@ public class SavingsAccount extends Account{
         super(_name, _cpf);
         
     }
+
+    public static void main(String[] args) {
+        SavingsAccount poupanca = new SavingsAccount("Logan", "033.775.332-76");
+        poupanca.balance = 100;
+        poupanca.toWithdraw(25);
+    }
     
 }
