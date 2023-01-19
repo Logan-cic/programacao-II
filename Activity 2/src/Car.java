@@ -13,6 +13,7 @@ public class Car {
     private String music;
     private boolean soundBox = false;
     private float fuelLiters;
+    Scanner enter = new Scanner(System.in);
 
     public Car(int enginePower) {
         this.enginePower = enginePower;
@@ -48,7 +49,6 @@ public class Car {
             playMusic();
             return;
         }
-        Scanner enter = new Scanner(System.in);
         System.out.println("What song do you want to listen now");
         music = enter.nextLine();
         System.out.println("You are listening now " + music);
