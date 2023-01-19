@@ -9,6 +9,9 @@ public class SavingsAccount extends Account{
         SavingsAccount poupanca = new SavingsAccount("Logan", "033.775.332-76");
         poupanca.balance = 100;
         poupanca.toWithdraw(25);
+        SavingsAccount poupanca1 = new SavingsAccount("Logan", "033.775.332-76");
+        poupanca.transfer(50, poupanca1);
+        System.out.println(poupanca.balance);
     }
     
 }

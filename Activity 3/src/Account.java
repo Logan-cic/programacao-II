@@ -25,8 +25,10 @@ public class Account extends AccountHolder {
         return toWithdraw;
     }
 
-    public void transfer( double value, AccountHolder to ) {
-        
+    public void transfer( double value, Account to ) {
+        this.balance -= value;
+        to.balance += value;
+        System.out.println("The "+ to.getName()+" holder account has "+to.balance+" balance now");
     }   
-
+ 
 }
