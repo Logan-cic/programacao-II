@@ -8,9 +8,9 @@ public class CurrentAccount extends Account{
 
     @Override
     public double toWithdraw ( double toWithdraw ) {
-        double currentValue;
-        currentValue = overdraft - toWithdraw;
         if( balance == 0 && toWithdraw <= overdraft) {
+            double currentValue;
+            currentValue = overdraft - toWithdraw;
             System.out.println("You have "+currentValue);
             System.out.println("Withdrawn amount "+toWithdraw);
             return toWithdraw;
@@ -23,7 +23,7 @@ public class CurrentAccount extends Account{
     }  
     public static void main(String[] args) {
         CurrentAccount conta = new CurrentAccount("Logan", "033.775.332-76");
-        conta.balance = 100;
-        conta.toWithdraw(40);
+        // conta.balance = 100;
+        conta.toWithdraw(200);
     }
 }
