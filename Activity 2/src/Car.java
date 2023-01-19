@@ -57,7 +57,7 @@ public class Car {
     public static void main(String[] args) {
         // como eu faço para instanciar a classe?
         // muito facil: use o new
-       
+        
         Car onix = new Car(60); 
         onix.toFuel();
         System.out.println("Your fuel level "+onix.fuelLiters);
