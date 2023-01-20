@@ -1,4 +1,4 @@
-public class Account extends AccountHolder {
+class Account extends AccountHolder {
     protected double balance = 0;
 
     public Account(String _name, String _cpf) {
@@ -30,5 +30,5 @@ public class Account extends AccountHolder {
         to.balance += value;
         System.out.println("The "+ to.getName()+" holder account has "+to.balance+" balance now");
     }   
- 
+
 }

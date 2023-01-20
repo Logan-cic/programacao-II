@@ -1,4 +1,4 @@
-public class AccountHolder {
+class AccountHolder {
     private String name;
     private String cpf; 
 

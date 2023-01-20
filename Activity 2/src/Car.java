@@ -43,7 +43,7 @@ public class Car {
     }
 
     public void playMusic() {
-        if (soundBox == false) {
+        if (!soundBox) {
             System.out.println("Turning on sound box...");
             this.soundBox = true;
             playMusic();

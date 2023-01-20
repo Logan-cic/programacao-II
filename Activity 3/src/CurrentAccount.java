@@ -1,4 +1,4 @@
-public class CurrentAccount extends Account{
+class CurrentAccount extends Account{
     private double overdraft;
 
     public CurrentAccount( String _name, String _cpf ) {
